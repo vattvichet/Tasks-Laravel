@@ -23,7 +23,7 @@ class Store_TasksRequest extends FormRequest
     {
         return [
 
-            'name' => 'required|string|max:255',
+            'title' => 'required|string|max:255',
             'description' => 'required|string',
             'long_description' => 'required|string',
             'completed' => 'boolean',

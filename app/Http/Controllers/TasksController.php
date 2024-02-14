@@ -15,4 +15,10 @@ class TasksController extends Controller
         $validated = $request->validated();
         $tasks = Tasks::create($validated);
     }
+
+    public function getAllTasks()
+    {
+        $tasks = Tasks::all();
+        return view('index', compact('tasks'));
+    }
 }

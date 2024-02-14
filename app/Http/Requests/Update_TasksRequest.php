@@ -22,7 +22,10 @@ class Update_TasksRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'title' => 'sometimes|string|max:255',
+            'description' => 'sometimes|string',
+            'long_description' => 'sometimes|string',
+            'completed' => 'boolean',
         ];
     }
 }

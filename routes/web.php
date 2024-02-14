@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [TasksController::class, 'homeTasks']);
+Route::get('/', [TasksController::class, 'getAllTasks']);
 
 Route::fallback(function () {
     return "Invalid Url";
